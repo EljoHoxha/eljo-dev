@@ -8,6 +8,7 @@ import type { Project } from "../types/project";
 export const powerOfTwo: Project = {
   slug: "power-of-two",
   name: "Power of Two",
+  liveUrl: "https://pof2.com/",
   detailTitle: "Power of Two (Pof2) – Frontend Architecture & Development",
   role: "Senior Frontend Developer",
   timeline: "2025",

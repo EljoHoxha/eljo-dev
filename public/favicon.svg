@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Eljo Hoxha monogram</title>
+  <description id="description">EH monogram in a cyan to magenta gradient on a dark rounded square.</description>
+  <defs>
+    <linearGradient id="border" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#65f4ff" />
+      <stop offset="0.52" stop-color="#9cffd0" />
+      <stop offset="1" stop-color="#ff6bcb" />
+    </linearGradient>
+    <radialGradient id="surface" cx="0" cy="0" r="1" gradientTransform="translate(154 120) rotate(45) scale(470)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17233a" />
+      <stop offset="0.58" stop-color="#080c16" />
+      <stop offset="1" stop-color="#05070d" />
+    </radialGradient>
+  </defs>
+
+  <rect x="18" y="18" width="476" height="476" rx="112" fill="url(#surface)" />
+  <rect x="29" y="29" width="454" height="454" rx="101" fill="none" stroke="url(#border)" stroke-width="22" />
+
+  <path
+    d="M104 126h122v43h-74v44h66v42h-66v88h76v43H104V126Z"
+    fill="url(#border)"
+  />
+  <path
+    d="M256 126h48v86h56v-86h48v260h-48V257h-56v129h-48V126Z"
+    fill="url(#border)"
+  />
+</svg>

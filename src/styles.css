@@ -213,6 +213,19 @@ button {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.tech-logo {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 7px currentColor);
+}
+
 .glow-tag {
   border-color: rgba(101, 244, 255, 0.24);
   background: rgba(101, 244, 255, 0.08);

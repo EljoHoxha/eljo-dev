@@ -11,6 +11,7 @@ import type { Project } from "../types/project";
 export const kidspod: Project = {
   slug: "kidspod",
   name: "KidsPod",
+  liveUrl: "https://kidspod.app/",
   detailTitle: "Kidspod Mobile Client - Kids Podcast & Media Streaming App",
   description:
     "Developed and maintained a cross-platform mobile application for kids-focused podcast and media content. The app supports podcast discovery, audio playback, offline listening, child profiles, parental controls, subscriptions, Google/Apple authentication, deep linking, drawing/read-along activities, analytics, and production CI/CD workflows for iOS and Android.",

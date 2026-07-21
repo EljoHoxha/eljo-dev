@@ -13,6 +13,7 @@ import type { Project } from "../types/project";
 export const wrent: Project = {
   slug: "wrent",
   name: "Wrent",
+  liveUrl: "https://wrentapp.com/",
   detailTitle: "Wrent — Peer-to-Peer Tool Rental Marketplace",
   role: "React Native / React Frontend Engineer",
   timeline: "2025–2026",

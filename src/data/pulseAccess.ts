@@ -16,6 +16,7 @@ import gallery10 from "../assets/projects/paramount/gallery10.png";
 export const pulseAccess: Project = {
   slug: "pulse-access",
   name: "Pulse Access & RivFit",
+  liveUrl: "https://paramountacceptance.com/mobile-app/",
   detailTitle:
     "Paramount Pulse Access & RivFit — Fitness Membership Platform Modernization",
   role: "Lead React Native Developer",

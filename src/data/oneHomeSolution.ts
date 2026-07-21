@@ -14,6 +14,7 @@ import type { Project } from "../types/project";
 export const oneHomeSolution: Project = {
   slug: "one-home-solution",
   name: "One Home Solution",
+  liveUrl: "https://onehomesolution.com/",
   detailTitle:
     "One Home Solution — Cross-platform Customer & Field Service Applications",
   role: "React Native / Expo Engineer",

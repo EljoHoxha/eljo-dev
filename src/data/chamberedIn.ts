@@ -26,6 +26,7 @@ import type { Project } from "../types/project";
 export const chamberedIn: Project = {
   slug: "chamberedin",
   name: "ChamberedIn",
+  liveUrl: "https://chamberedin.com/",
   detailTitle: "ChamberedIn — Professional Networking & Community Platform",
   role: "Senior React Native Developer — Events Lead",
   timeline: "2026",

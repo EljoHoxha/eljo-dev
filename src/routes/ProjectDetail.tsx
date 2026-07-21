@@ -2,6 +2,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react
 import { Link, useParams } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
+import TechTag from '../components/TechTag';
 import { getProjectBySlug } from '../data/projects';
 import type { ProjectImage } from '../types/project';
 
@@ -132,11 +133,21 @@ export default function ProjectDetail() {
                 )}
               </dl>
               <div className="mt-8 flex flex-wrap gap-2">
-                {project.techStack.map((technology) => <span className="tag glow-tag" key={technology}>{technology}</span>)}
+                {project.techStack.map((technology) => <TechTag className="glow-tag" key={technology} label={technology} />)}
               </div>
               {(project.liveUrl || project.repositoryUrl) && (
                 <div className="mt-8 flex flex-wrap gap-3">
-                  {project.liveUrl && <a className="primary-button" href={project.liveUrl} target="_blank" rel="noreferrer">Live site <ExternalLink size={17} /></a>}
+                  {project.liveUrl && (
+                    <a
+                      aria-label={`Visit ${project.name} live app`}
+                      className="primary-button"
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visit live app <ExternalLink size={17} />
+                    </a>
+                  )}
                   {project.repositoryUrl && <a className="secondary-button" href={project.repositoryUrl} target="_blank" rel="noreferrer">Repository <ExternalLink size={17} /></a>}
                 </div>
               )}

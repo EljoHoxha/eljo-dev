@@ -20,6 +20,7 @@ import {
 import { Link } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
+import TechTag from '../components/TechTag';
 import { caseStudyProjects, projects } from '../data/projects';
 import resumePath from '../assets/cv/eljo-hoxha-cv.pdf';
 
@@ -74,7 +75,7 @@ const skills = [
 
 const timeline = [
   ['2026', 'ChamberedIn', 'Senior React Native Developer — Events Lead'],
-  ['2025-2026', 'One Home Solution', 'Senior Frontend Engineer'],
+  ['2025-2026', 'One Home Solution', 'Senior Frontend Developer'],
   ['2025', 'Power of Two', 'Senior Frontend Engineer'],
   ['2024-2025', 'N-OV8', 'Frontend Engineer'],
   ['2024', 'Pulse Access', 'Senior React Native Engineer'],
@@ -147,19 +148,19 @@ function App() {
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 border border-white/14 bg-white/[0.06] px-3 py-2 text-xs font-medium uppercase tracking-[0.24em] text-cyan-100 shadow-[0_0_42px_rgba(101,244,255,0.12)]">
               <Sparkles size={15} />
-              Senior Frontend Engineer
+              ineer
             </div>
             <h1 className="max-w-4xl text-5xl font-semibold leading-[0.92] tracking-normal text-white sm:text-7xl lg:text-8xl">
               Eljo Hoxha
             </h1>
-            <p className="mt-5 text-2xl font-medium text-cyan-100 sm:text-3xl">Senior Frontend Engineer</p>
+            <p className="mt-5 text-2xl font-medium text-cyan-100 sm:text-3xl">Senior Frontend Developer</p>
             <p className="mt-7 max-w-2xl text-base leading-8 text-slate-200/78 sm:text-lg">
               I build scalable web and mobile applications with React, React Native, TypeScript, and Expo.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-2">
               {techBadges.map((badge) => (
-                <span className="tag glow-tag" key={badge}>{badge}</span>
+                <TechTag className="glow-tag" key={badge} label={badge} />
               ))}
             </div>
 
@@ -198,7 +199,7 @@ function App() {
             </div>
             <div className="copy-panel text-base leading-8 text-white/68 sm:text-lg">
               <p>
-                I am a Senior Frontend Engineer with 5+ years of experience building scalable web and mobile applications for SaaS platforms, marketplaces, fitness apps, audio streaming products, and community platforms.
+                I am a Senior Frontend Developer with 5+ years of experience building scalable web and mobile applications for SaaS platforms, marketplaces, fitness apps, audio streaming products, and community platforms.
               </p>
               <p className="mt-5">
                 I specialize in React, React Native, Expo, TypeScript, frontend architecture, reusable component systems, and cross-platform product development. I enjoy turning complex product requirements into clean, maintainable, production-ready applications.
@@ -235,7 +236,7 @@ function App() {
                 <h3 className="text-lg font-semibold text-white">{title}</h3>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {items.map((item) => (
-                    <span className="tag" key={item}>{item}</span>
+                    <TechTag key={item} label={item} />
                   ))}
                 </div>
               </article>
@@ -283,7 +284,7 @@ function App() {
                   <p className="mini-label">Tech stack</p>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {project.techStack.map((item) => (
-                      <span className="tag muted-tag" key={item}>{item}</span>
+                      <TechTag className="muted-tag" key={item} label={item} />
                     ))}
                   </div>
                 </div>
@@ -339,7 +340,7 @@ function App() {
                   </div>
                   <div className="mt-7 flex flex-wrap gap-2">
                     {project.techStack.map((item) => (
-                      <span className="tag glow-tag" key={item}>{item}</span>
+                      <TechTag className="glow-tag" key={item} label={item} />
                     ))}
                   </div>
                   <Link className="project-link" to="/projects/$slug" params={{ slug: project.slug }}>
