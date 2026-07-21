@@ -127,7 +127,6 @@ export default function FutureScene() {
   return (
     <div className="scene-shell" aria-hidden="true">
       <Canvas camera={{ position: [0, 0.25, 6], fov: 47 }} dpr={[1, 1.8]}>
-        <color attach="background" args={['#05070d']} />
         <ambientLight intensity={0.48} />
         <pointLight position={[3, 2, 4]} intensity={22} color="#65f4ff" />
         <pointLight position={[-4, -1, 2]} intensity={12} color="#ff6bcb" />

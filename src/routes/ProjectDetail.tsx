@@ -3,6 +3,7 @@ import { Link, useParams } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
 import TechTag from '../components/TechTag';
+import ThemeToggle from '../components/ThemeToggle';
 import { getProjectBySlug } from '../data/projects';
 import type { ProjectImage } from '../types/project';
 
@@ -78,7 +79,7 @@ function ProjectImageCarousel({ images, projectName }: { images: ProjectImage[];
 
 function ProjectNotFound() {
   return (
-    <main className="project-page min-h-screen bg-[#05070d] text-white">
+    <main className="project-page min-h-screen">
       <FutureScene />
       <div className="project-page-overlay" />
       <section className="project-not-found relative z-10 mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center px-5 text-center">
@@ -100,7 +101,7 @@ export default function ProjectDetail() {
   if (!project) return <ProjectNotFound />;
 
   return (
-    <main className="project-page min-h-screen overflow-hidden bg-[#05070d] text-white">
+    <main className="project-page min-h-screen overflow-hidden">
       <FutureScene />
       <div className="project-page-overlay" />
       <div className="relative z-10">
@@ -110,7 +111,10 @@ export default function ProjectDetail() {
               <span className="grid h-10 w-10 place-items-center border border-cyan-200/40 bg-cyan-200/10 text-sm font-semibold text-cyan-100">EH</span>
               <span className="hidden text-sm font-medium tracking-[0.22em] text-white/70 sm:block">ELJO HOXHA</span>
             </Link>
-            <Link className="secondary-button" to="/" hash="projects"><ArrowLeft size={17} /> All projects</Link>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Link className="secondary-button" to="/" hash="projects"><ArrowLeft size={17} /> All projects</Link>
+            </div>
           </div>
         </header>
 

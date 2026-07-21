@@ -21,6 +21,7 @@ import { Link } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
 import TechTag from '../components/TechTag';
+import ThemeToggle from '../components/ThemeToggle';
 import { caseStudyProjects, projects } from '../data/projects';
 import resumePath from '../assets/cv/eljo-hoxha-cv.pdf';
 
@@ -113,13 +114,13 @@ function App() {
   }, []);
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#05070d] text-white">
+    <main className="app-shell min-h-screen overflow-hidden">
       <FutureScene />
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_18%_24%,rgba(101,244,255,0.22),transparent_30%),radial-gradient(circle_at_76%_18%,rgba(255,107,203,0.17),transparent_28%),linear-gradient(90deg,rgba(5,7,13,0.98)_0%,rgba(5,7,13,0.78)_48%,rgba(5,7,13,0.36)_100%)]" />
+      <div className="app-page-overlay pointer-events-none fixed inset-0" />
 
       <div className="relative z-10">
         <header
-          className={`fixed inset-x-0 top-0 z-30 border-b border-white/8 bg-[#05070d]/70 backdrop-blur-2xl transition-transform duration-300 ease-out will-change-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+          className={`site-header fixed inset-x-0 top-0 z-30 border-b backdrop-blur-2xl transition-transform duration-300 ease-out will-change-transform ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
             }`}
         >
           <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
@@ -138,9 +139,12 @@ function App() {
               <a href="#timeline">Timeline</a>
               <a href="#contact">Contact</a>
             </nav>
-            <a className="icon-link" href="mailto:eljohoxha15@gmail.com" aria-label="Email Eljo">
-              <Mail size={18} />
-            </a>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <a className="icon-link" href="mailto:eljohoxha15@gmail.com" aria-label="Email Eljo">
+                <Mail size={18} />
+              </a>
+            </div>
           </div>
         </header>
 
@@ -148,7 +152,7 @@ function App() {
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 border border-white/14 bg-white/[0.06] px-3 py-2 text-xs font-medium uppercase tracking-[0.24em] text-cyan-100 shadow-[0_0_42px_rgba(101,244,255,0.12)]">
               <Sparkles size={15} />
-              ineer
+              Senior React Native Engineer
             </div>
             <h1 className="max-w-4xl text-5xl font-semibold leading-[0.92] tracking-normal text-white sm:text-7xl lg:text-8xl">
               Eljo Hoxha
