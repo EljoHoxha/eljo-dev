@@ -1,0 +1,123 @@
+import powerOfTwoCover from "../assets/projects/pof2/pof2.png";
+import gallery1 from "../assets/projects/pof2/gallery1.png";
+import gallery2 from "../assets/projects/pof2/gallery2.png";
+import gallery3 from "../assets/projects/pof2/gallery3.png";
+import gallery4 from "../assets/projects/pof2/gallery4.png";
+import type { Project } from "../types/project";
+
+export const powerOfTwo: Project = {
+  slug: "power-of-two",
+  name: "Power of Two",
+  detailTitle: "Power of Two (Pof2) – Frontend Architecture & Development",
+  role: "Senior Frontend Developer",
+  timeline: "2025",
+  description:
+    "Independently designed and developed the frontend architecture for Power of Two, a cross-platform application focused on campaign participation, user onboarding, payments, and engagement. A core feature was the shareable link and invitation flow, which enabled users to join campaigns and complete onboarding through a seamless digital experience. I also implemented deep linking for smooth navigation from shared links and external entry points. Built mobile-first with React Native and Expo, the product was later expanded to web for a consistent experience across devices.",
+  features: [
+    "Cross-platform mobile and web architecture",
+    "Shareable campaign links and invitations",
+    "Invitation-based onboarding",
+    "Deep linking from external entry points",
+    "Persistent authentication and onboarding",
+    "Campaign creation, discovery, and management",
+    "Referral sharing and sales tracking",
+    "Earnings and engagement dashboards",
+    "Product purchases and Stripe checkout",
+    "Saved cards and default payment methods",
+    "Withdrawal onboarding",
+    "Push notifications",
+    "Profile and media management",
+    "Environment-based configuration",
+    "EAS build and deployment pipelines",
+    "Over-the-air updates",
+  ],
+  techStack: [
+    "React Native",
+    "Expo",
+    "Expo Router",
+    "TypeScript",
+    "React 19",
+    "React Native Web",
+    "Tamagui",
+    "Zustand",
+    "TanStack React Query",
+    "React Hook Form",
+    "Zod",
+    "Stripe React Native",
+    "Stripe.js",
+    "Stripe Elements",
+    "Expo Secure Store",
+    "Expo Notifications",
+    "Expo Image Picker",
+    "Expo Camera",
+    "Expo Media Library",
+    "Expo Document Picker",
+    "Expo Web Browser",
+    "Expo Sharing",
+    "React Native Reanimated",
+    "React Native Gesture Handler",
+    "React Native SVG",
+    "React Native Video",
+    "Bottom sheets",
+    "EAS Build",
+    "EAS Update",
+    "Expo Updates",
+    "Firebase backend integration",
+    "Jest",
+  ],
+  images: [
+    {
+      src: powerOfTwoCover,
+      alt: "Two synchronized holographic interfaces representing the Power of Two cross-platform product",
+      caption: "Power of Two cross-platform architecture concept",
+    },
+    {
+      src: gallery3,
+      alt: "Two synchronized holographic interfaces representing the Power of Two cross-platform product",
+      caption: "Power of Two cross-platform architecture concept",
+    },
+    {
+      src: gallery4,
+      alt: "Two synchronized holographic interfaces representing the Power of Two cross-platform product",
+      caption: "Power of Two cross-platform architecture concept",
+    },
+    {
+      src: gallery1,
+      alt: "Two synchronized holographic interfaces representing the Power of Two cross-platform product",
+      caption: "Power of Two cross-platform architecture concept",
+    },
+    {
+      src: gallery2,
+      alt: "Two synchronized holographic interfaces representing the Power of Two cross-platform product",
+      caption: "Power of Two cross-platform architecture concept",
+    },
+  ],
+  cvBulletPoints: [
+    "Independently designed and implemented the frontend architecture from scratch, owning architectural decisions, component design, routing, state management, API integration, UI/UX implementation, and release configuration.",
+    "Developed a production-oriented digital-commerce and campaign application for iOS, Android, and web using React Native, Expo, and TypeScript.",
+    "Developed the core shareable link and invitation flow, enabling users to enter campaigns and complete onboarding from shared external links.",
+    "Implemented deep linking across mobile and web to route invitation-based entry points directly into the correct campaign and onboarding experience.",
+    "Built the product as a mobile-first React Native and Expo application, then extended it to web to provide a unified cross-platform experience.",
+    "Built campaign creation, discovery, participation, referral sharing, sales tracking, earnings dashboards, and campaign-management experiences.",
+    "Implemented end-to-end Stripe workflows covering product purchases, saved payment methods, default-card management, setup intents, checkout, and withdrawal onboarding.",
+    "Created reusable components and consistent design-system patterns with Tamagui, custom UI primitives, fonts, splash screens, and theme support.",
+    "Separated presentation components, business logic, feature services, global Zustand state, shared types, and API communication into a scalable modular architecture.",
+    "Created a typed API layer and approximately 30 reusable TanStack React Query hooks with cache invalidation, loading states, refetching, and centralized authentication handling.",
+    "Implemented persistent authentication with Zustand and platform-specific secure storage, including automatic session cleanup after unauthorized API responses.",
+    "Built responsive and platform-specific UI with Tamagui, Expo Router, bottom sheets, animations, typed routes, and React Native Web.",
+    "Integrated Firebase-backed services and Expo capabilities for push notifications, secure storage, deep linking, media selection, camera access, document handling, and native sharing.",
+    "Configured environment-specific API, Stripe, web-host, and application settings for development, preview, and production stages.",
+    "Configured EAS build profiles, over-the-air updates, universal links, typed routes, and application settings for production, preview, and development environments.",
+    "Maintained native platform configuration for iOS and Android, including bundle identifiers, permissions, Firebase services, deep-link intent filters, and media access.",
+    "Implemented Expo Updates with on-load update checks and app-version runtime policies, enabling over-the-air delivery of frontend fixes without full store releases.",
+  ],
+  caseStudy: {
+    subtitle: "Invitation-driven cross-platform architecture",
+    problem:
+      "The product needed a frictionless way for users to discover shared campaigns, enter from external invitation links, complete onboarding, and participate consistently across mobile and web.",
+    solution:
+      "Designed the modular Expo architecture and built a shareable invitation flow with deep-link routing into campaign and onboarding screens. Connected it to a typed API layer with approximately 30 React Query hooks, persistent Zustand authentication, complete Stripe payment and withdrawal workflows, responsive Tamagui UI, Firebase-backed services, and environment-aware releases.",
+    result:
+      "A production-oriented campaign and digital-commerce experience supporting iOS, Android, and web, with reusable data and UI foundations, reliable payment journeys, repeatable EAS builds, and over-the-air updates.",
+  },
+};
