@@ -21,8 +21,7 @@ import { Link } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
 import { caseStudyProjects, projects } from '../data/projects';
-
-const resumePath = '/eljo-hoxha-resume.pdf';
+import resumePath from '../assets/cv/eljo-hoxha-cv.pdf';
 
 const techBadges = ['React Native', 'Expo', 'TypeScript', 'React', 'GraphQL', 'TanStack Query'];
 
