@@ -2,6 +2,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react
 import { Link, useParams } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
+import CommandPalette from '../components/CommandPalette';
 import TechTag from '../components/TechTag';
 import ThemeToggle from '../components/ThemeToggle';
 import { getProjectBySlug } from '../data/projects';
@@ -112,6 +113,7 @@ export default function ProjectDetail() {
               <span className="hidden text-sm font-medium tracking-[0.22em] text-white/70 sm:block">ELJO HOXHA</span>
             </Link>
             <div className="flex items-center gap-2">
+              <CommandPalette />
               <ThemeToggle />
               <Link className="secondary-button" to="/" hash="projects"><ArrowLeft size={17} /> All projects</Link>
             </div>

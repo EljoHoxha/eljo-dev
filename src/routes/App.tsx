@@ -20,6 +20,7 @@ import {
 import { Link } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
+import CommandPalette from '../components/CommandPalette';
 import TechTag from '../components/TechTag';
 import ThemeToggle from '../components/ThemeToggle';
 import { caseStudyProjects, projects } from '../data/projects';
@@ -140,6 +141,7 @@ function App() {
               <a href="#contact">Contact</a>
             </nav>
             <div className="flex items-center gap-2">
+              <CommandPalette />
               <ThemeToggle />
               <a className="icon-link" href="mailto:eljohoxha15@gmail.com" aria-label="Email Eljo">
                 <Mail size={18} />
@@ -192,7 +194,25 @@ function App() {
               ))}
             </div>
           </div>
-          <div className="hidden h-full lg:block" />
+          <div className="hero-system-hud hidden lg:flex" aria-hidden="true">
+            <div className="hud-scanline" />
+            <div className="hud-heading">
+              <span>EH / FRONTEND SYSTEMS</span>
+              <span className="hud-status"><i /> ONLINE</span>
+            </div>
+            <p className="hud-title">Architecture to production.</p>
+            <div className="hud-flow">
+              {['PRODUCT', 'ARCHITECTURE', 'INTERFACE', 'DELIVERY'].map((item, index) => (
+                <div key={item}>
+                  <span>0{index + 1}</span>
+                  <strong>{item}</strong>
+                </div>
+              ))}
+            </div>
+            <div className="hud-footer">
+              <span>iOS</span><span>ANDROID</span><span>WEB</span><span>PRODUCTION</span>
+            </div>
+          </div>
         </section>
 
         <section id="about" className="page-section">
