@@ -5,7 +5,7 @@ dist/
 dist-ssr/
 
 # Dependency lock file
-package-lock.json
+/package-lock.json
 
 # Environment and local configuration
 .env
