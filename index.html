@@ -9,14 +9,13 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <script>
       (() => {
-        const systemTheme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         let savedTheme = null;
         try {
           savedTheme = localStorage.getItem('portfolio-theme');
         } catch {
-          // Fall back to the operating-system preference.
+          // Fall back to dark mode when browser storage is unavailable.
         }
-        const theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : systemTheme;
+        const theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : 'dark';
         document.documentElement.dataset.theme = theme;
         document.documentElement.style.colorScheme = theme;
       })();

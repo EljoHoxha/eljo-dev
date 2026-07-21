@@ -17,23 +17,6 @@ export default function ThemeToggle() {
     themeColor?.setAttribute('content', theme === 'dark' ? '#05070d' : '#f4f7fb');
   }, [theme]);
 
-  useEffect(() => {
-    const systemPreference = window.matchMedia('(prefers-color-scheme: light)');
-    const followSystemPreference = (event: MediaQueryListEvent) => {
-      try {
-        const savedTheme = localStorage.getItem('portfolio-theme');
-        if (savedTheme === 'light' || savedTheme === 'dark') return;
-      } catch {
-        // Continue following the device theme when storage is unavailable.
-      }
-
-      setTheme(event.matches ? 'light' : 'dark');
-    };
-
-    systemPreference.addEventListener('change', followSystemPreference);
-    return () => systemPreference.removeEventListener('change', followSystemPreference);
-  }, []);
-
   const nextTheme = theme === 'dark' ? 'light' : 'dark';
 
   const selectTheme = () => {
