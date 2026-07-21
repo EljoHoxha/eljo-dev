@@ -72,8 +72,8 @@ button {
 }
 
 [data-theme="light"] .scene-shell {
-  opacity: 0.34;
-  filter: saturate(0.82);
+  opacity: 0.86;
+  filter: brightness(0.58) contrast(1.32) saturate(1.28);
 }
 
 .app-shell,
@@ -91,9 +91,9 @@ button {
 
 [data-theme="light"] .app-page-overlay {
   background:
-    radial-gradient(circle at 18% 24%, rgba(0, 171, 190, 0.15), transparent 32%),
-    radial-gradient(circle at 76% 18%, rgba(220, 45, 151, 0.1), transparent 30%),
-    linear-gradient(90deg, rgba(244, 247, 251, 0.98) 0%, rgba(244, 247, 251, 0.88) 52%, rgba(244, 247, 251, 0.62) 100%);
+    radial-gradient(circle at 18% 24%, rgba(0, 171, 190, 0.12), transparent 32%),
+    radial-gradient(circle at 76% 18%, rgba(220, 45, 151, 0.07), transparent 30%),
+    linear-gradient(90deg, rgba(244, 247, 251, 0.98) 0%, rgba(244, 247, 251, 0.84) 50%, rgba(244, 247, 251, 0.24) 100%);
 }
 
 .site-header {
@@ -794,7 +794,7 @@ button {
 [data-theme="light"] .project-page-overlay {
   background:
     radial-gradient(circle at 78% 12%, rgba(8, 145, 164, 0.12), transparent 30%),
-    linear-gradient(180deg, rgba(244, 247, 251, 0.68), rgba(244, 247, 251, 0.96));
+    linear-gradient(180deg, rgba(244, 247, 251, 0.48), rgba(244, 247, 251, 0.82));
 }
 
 [data-theme="light"] .project-header {
