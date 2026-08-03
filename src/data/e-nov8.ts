@@ -1,10 +1,22 @@
-import nov8Cover from "../assets/projects/nov8/nov8.webp";
+import signIn from "../assets/projects/e-nov8/sign-in.png";
+import pricingPlans from "../assets/projects/e-nov8/pricing-plans.png";
+import upgradePlan from "../assets/projects/e-nov8/upgrade-plan.png";
+import paymentSuccess from "../assets/projects/e-nov8/payment-success.png";
+import premiumWelcome from "../assets/projects/e-nov8/premium-welcome.png";
+import aiPersonas from "../assets/projects/e-nov8/ai-personas.png";
+import adminDashboard from "../assets/projects/e-nov8/admin-dashboard.png";
+import adminMembers from "../assets/projects/e-nov8/admin-members.png";
+import teamMembers from "../assets/projects/e-nov8/team-members.png";
+import editMemberFormDetail from "../assets/projects/e-nov8/edit-member-form-detail.png";
+import editMemberModal from "../assets/projects/e-nov8/edit-member-modal.png";
+import deleteMemberConfirmation from "../assets/projects/e-nov8/delete-member-confirmation.png";
+import updatePasswordValidation from "../assets/projects/e-nov8/update-password-validation.png";
 import type { Project } from "../types/project";
 
-export const nov8: Project = {
-  slug: "nov8",
-  name: "NOV8",
-  detailTitle: "NOV8 — AI SaaS Collaboration Platform",
+export const enov8: Project = {
+  slug: "e-nov8",
+  name: "E-nov8",
+  detailTitle: "E-nov8 — AI SaaS Collaboration Platform",
   role: "Vue Frontend Developer",
   timeline: "November–December 2024",
   description:
@@ -42,9 +54,69 @@ export const nov8: Project = {
   ],
   images: [
     {
-      src: nov8Cover,
-      alt: "AI SaaS workspace with chat, audio input, subscriptions, analytics, and team panels",
-      caption: "NOV8 AI SaaS workspace concept",
+      src: aiPersonas,
+      alt: "E-nov8 AI persona workspace with searchable specialists and chat actions",
+      caption: "AI persona discovery and conversation workspace",
+    },
+    {
+      src: signIn,
+      alt: "E-nov8 sign-in screen with email and password fields",
+      caption: "Secure account sign-in experience",
+    },
+    {
+      src: pricingPlans,
+      alt: "E-nov8 pricing page comparing free, premium, and enterprise plans",
+      caption: "Monthly and yearly subscription plan comparison",
+    },
+    {
+      src: upgradePlan,
+      alt: "Premium plan upgrade modal with saved payment card selection",
+      caption: "Plan upgrade and saved payment method workflow",
+    },
+    {
+      src: paymentSuccess,
+      alt: "Successful premium subscription payment confirmation",
+      caption: "Subscription payment confirmation and invoice details",
+    },
+    {
+      src: premiumWelcome,
+      alt: "Premium welcome modal displayed over the E-nov8 AI persona workspace",
+      caption: "Premium onboarding after a successful upgrade",
+    },
+    {
+      src: adminDashboard,
+      alt: "E-nov8 super-admin dashboard with account metrics and subscription charts",
+      caption: "Super-admin account and subscription analytics",
+    },
+    {
+      src: adminMembers,
+      alt: "E-nov8 super-admin members table with plan and subscription status filters",
+      caption: "Platform member and subscription administration",
+    },
+    {
+      src: teamMembers,
+      alt: "E-nov8 team members table with role, edit, and delete controls",
+      caption: "Team member and role management",
+    },
+    {
+      src: editMemberModal,
+      alt: "Edit member modal with email address and role fields",
+      caption: "Editing a team member and assigning a role",
+    },
+    {
+      src: editMemberFormDetail,
+      alt: "Close-up of focused email and role fields in the edit member form",
+      caption: "Focused edit-member form state",
+    },
+    {
+      src: deleteMemberConfirmation,
+      alt: "Delete member confirmation dialog warning that the action is permanent",
+      caption: "Destructive action confirmation for team management",
+    },
+    {
+      src: updatePasswordValidation,
+      alt: "Update password form with inline password requirement validation",
+      caption: "Account security settings and inline validation",
     },
   ],
   cvBulletPoints: [
@@ -60,7 +132,8 @@ export const nov8: Project = {
     "Collaborated in a fast-moving repository that reached 84 commits and approximately 18,600 inserted lines across the team during the initial three-week delivery window.",
   ],
   caseStudy: {
-    subtitle: "From first Vue experience to product-sized delivery in three weeks",
+    subtitle:
+      "From first Vue experience to product-sized delivery in three weeks",
     problem:
       "A broad SaaS experience spanning authentication, conversational AI, subscriptions, billing, team management, and administration needed to move forward quickly while backend endpoints were still becoming available.",
     solution:

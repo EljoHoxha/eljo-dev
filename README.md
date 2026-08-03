@@ -90,15 +90,15 @@ src/
 ### Run locally
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open `http://127.0.0.1:5173`.
 
 ```bash
-npm run build    # Type-check and create a production build
-npm run preview  # Preview the production build locally
+pnpm build    # Type-check and create a production build
+pnpm preview  # Preview the production build locally
 ```
 
 ## Let's Build Something Substantial

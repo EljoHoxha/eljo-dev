@@ -1,7 +1,7 @@
 import type { Project } from "../types/project";
 import { chamberedIn } from "./chamberedIn";
 import { kidspod } from "./kidspod";
-import { nov8 } from "./nov8";
+import { enov8 } from "./e-nov8";
 import { oneHomeSolution } from "./oneHomeSolution";
 import { powerOfTwo } from "./powerOfTwo";
 import { poro } from "./poro";
@@ -14,7 +14,7 @@ export const projects: Project[] = [
   oneHomeSolution,
   wrent,
   powerOfTwo,
-  nov8,
+  enov8,
   pulseAccess,
   portal,
   kidspod,
