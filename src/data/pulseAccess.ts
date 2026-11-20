@@ -40,6 +40,12 @@ export const pulseAccess: Project = {
     "Environment-specific EAS releases",
     "Over-the-air application updates",
   ],
+  mainTechStack: [
+    "React Native 0.79",
+    "Expo SDK 53",
+    "TypeScript 5.8",
+    "TanStack React Query",
+  ],
   techStack: [
     "React Native 0.79",
     "React 19",

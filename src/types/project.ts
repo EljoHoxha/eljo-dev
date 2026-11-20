@@ -25,6 +25,7 @@ export type Project = {
   timeline?: string;
   description: string;
   features: string[];
+  mainTechStack: string[];
   techStack: string[];
   images: ProjectImage[];
   cvBulletPoints?: string[];

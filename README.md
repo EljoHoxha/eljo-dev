@@ -6,13 +6,13 @@
 
 I architect and deliver production applications across iOS, Android, and web—turning complex product workflows into scalable, maintainable software.
 
-[Email](mailto:eljohoxha15@gmail.com) · [LinkedIn](https://linkedin.com/in/eljo-hoxha-70915b279) · [Résumé](src/assets/cv/eljo-hoxha-cv.pdf)
+[Email](mailto:eljohoxha15@gmail.com) · [LinkedIn](https://linkedin.com/in/eljo-hoxha-70915b279) · [Résumé](src/assets/cv/EljoHoxha-CV.pdf)
 
 **5+ years building products · 9 production platforms · iOS + Android + Web**
 
 </div>
 
-![ChamberedIn professional networking and community platform](src/assets/projects/chamberedin/chamberedin-cover.webp)
+![ChamberedIn professional networking and community platform](src/assets/projects/chamberedin/chamberedin-cover.png)
 
 ## What I Bring
 

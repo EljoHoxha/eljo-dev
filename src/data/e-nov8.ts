@@ -39,6 +39,12 @@ export const enov8: Project = {
     "Theme and account preferences",
     "Responsive reusable UI",
   ],
+  mainTechStack: [
+    "Vue 3",
+    "TypeScript",
+    "Pinia",
+    "Tailwind CSS",
+  ],
   techStack: [
     "Vue 3",
     "TypeScript",

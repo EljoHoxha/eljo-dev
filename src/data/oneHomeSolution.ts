@@ -37,6 +37,12 @@ export const oneHomeSolution: Project = {
     "Shared responsive design system",
     "EAS builds and OTA releases",
   ],
+  mainTechStack: [
+    "React Native 0.79.6",
+    "Expo SDK 53",
+    "TypeScript 5.8",
+    "Tamagui",
+  ],
   techStack: [
     "React Native 0.79.6",
     "React 19",

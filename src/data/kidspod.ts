@@ -29,6 +29,12 @@ export const kidspod: Project = {
     "Draw Along and Read Along",
     "Analytics and CI/CD",
   ],
+  mainTechStack: [
+    "React Native",
+    "TypeScript",
+    "Zustand",
+    "TanStack React Query",
+  ],
   techStack: [
     "React Native",
     "TypeScript",

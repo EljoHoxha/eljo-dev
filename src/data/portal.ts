@@ -1,6 +1,6 @@
-import portalCover from "../assets/projects/portal/portal.webp";
-import portalGallery1 from "../assets/projects/portal/portal-gallery1.webp";
-import portalGallery2 from "../assets/projects/portal/portal-gallery2.webp";
+import portalCover from "../assets/projects/portal/portal.png";
+import portalGallery1 from "../assets/projects/portal/portal-gallery1.png";
+import portalGallery2 from "../assets/projects/portal/portal-gallery2.png";
 import type { Project } from "../types/project";
 
 export const portal: Project = {
@@ -25,6 +25,12 @@ export const portal: Project = {
     "Profile and password management",
     "Drag-and-drop file uploads",
     "Responsive dashboards and navigation",
+  ],
+  mainTechStack: [
+    "React 18",
+    "TypeScript",
+    "TanStack Query",
+    "Tailwind CSS",
   ],
   techStack: [
     "React 18",

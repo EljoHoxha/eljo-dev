@@ -1,12 +1,12 @@
-import poroCover from "../assets/projects/poro/poro-cover.webp";
-import poroGallery1 from "../assets/projects/poro/poro-gallery1.webp";
-import poroGallery2 from "../assets/projects/poro/poro-gallery2.webp";
-import poroGallery4 from "../assets/projects/poro/poro-gallery4.webp";
-import poroGallery5 from "../assets/projects/poro/poro-gallery5.webp";
-import poroGallery6 from "../assets/projects/poro/poro-gallery6.webp";
-import poroGallery7 from "../assets/projects/poro/poro-gallery7.webp";
-import poroGallery8 from "../assets/projects/poro/poro-gallery8.webp";
-import poroGallery9 from "../assets/projects/poro/poro-gallery9.webp";
+import poroCover from "../assets/projects/poro/poro-cover.png";
+import poroGallery1 from "../assets/projects/poro/poro-gallery1.png";
+import poroGallery2 from "../assets/projects/poro/poro-gallery2.png";
+import poroGallery4 from "../assets/projects/poro/poro-gallery4.png";
+import poroGallery5 from "../assets/projects/poro/poro-gallery5.png";
+import poroGallery6 from "../assets/projects/poro/poro-gallery6.png";
+import poroGallery7 from "../assets/projects/poro/poro-gallery7.png";
+import poroGallery8 from "../assets/projects/poro/poro-gallery8.png";
+import poroGallery9 from "../assets/projects/poro/poro-gallery9.png";
 import type { Project } from "../types/project";
 
 export const poro: Project = {
@@ -30,6 +30,12 @@ export const poro: Project = {
     "Restaurant performance insights",
     "Operations administration",
     "Multi-role user journeys",
+  ],
+  mainTechStack: [
+    "React",
+    "React Native",
+    "Node.js",
+    "AWS",
   ],
   techStack: [
     "React",

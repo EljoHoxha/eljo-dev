@@ -1,12 +1,12 @@
-import wrentCover from "../assets/projects/wrent/wrent.webp";
-import wrentGallery1 from "../assets/projects/wrent/wrent-gallery1.webp";
-import wrentGallery3 from "../assets/projects/wrent/wrent-gallery3.webp";
-import wrentGallery4 from "../assets/projects/wrent/wrent-gallery4.webp";
-import wrentGallery5 from "../assets/projects/wrent/wrent-gallery5.webp";
-import wrentGallery6 from "../assets/projects/wrent/wrent-gallery6.webp";
-import wrentGallery7 from "../assets/projects/wrent/wrent-gallery7.webp";
-import wrentGallery8 from "../assets/projects/wrent/wrent-gallery8.webp";
-import wrentGallery9 from "../assets/projects/wrent/wrent-gallery9.webp";
+import wrentCover from "../assets/projects/wrent/wrent.png";
+import wrentGallery1 from "../assets/projects/wrent/wrent-gallery1.png";
+import wrentGallery3 from "../assets/projects/wrent/wrent-gallery3.png";
+import wrentGallery4 from "../assets/projects/wrent/wrent-gallery4.png";
+import wrentGallery5 from "../assets/projects/wrent/wrent-gallery5.png";
+import wrentGallery6 from "../assets/projects/wrent/wrent-gallery6.png";
+import wrentGallery7 from "../assets/projects/wrent/wrent-gallery7.png";
+import wrentGallery8 from "../assets/projects/wrent/wrent-gallery8.png";
+import wrentGallery9 from "../assets/projects/wrent/wrent-gallery9.png";
 
 import type { Project } from "../types/project";
 
@@ -35,6 +35,12 @@ export const wrent: Project = {
     "Admin user and team management",
     "Searchable, paginated data tables",
     "Protected admin routes",
+  ],
+  mainTechStack: [
+    "React Native 0.79",
+    "Expo SDK 53",
+    "TypeScript",
+    "Tamagui",
   ],
   techStack: [
     "React Native 0.79",

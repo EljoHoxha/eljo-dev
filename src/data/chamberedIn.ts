@@ -1,5 +1,5 @@
-import chamberedInCover from "../assets/projects/chamberedin/chamberedin-cover.webp";
-import profileDashboard from "../assets/projects/chamberedin/chamberedin-profile-dashboard.webp";
+import chamberedInCover from "../assets/projects/chamberedin/chamberedin-cover.png";
+import profileDashboard from "../assets/projects/chamberedin/chamberedin-profile-dashboard.png";
 import mobileEventsCalendar from "../assets/projects/chamberedin/mobile-events-calendar.png";
 import fullCalendarView from "../assets/projects/chamberedin/full-calendar-view.png";
 import eventFilters from "../assets/projects/chamberedin/event-filters.png";
@@ -45,6 +45,12 @@ export const chamberedIn: Project = {
     "Revenue reporting and CSV export",
     "Calendar, agenda, and grouped views",
     "Role-based event administration",
+  ],
+  mainTechStack: [
+    "React Native 0.79",
+    "Expo SDK 53",
+    "TypeScript 5.8",
+    "GraphQL",
   ],
   techStack: [
     "React Native 0.79",

@@ -32,6 +32,12 @@ export const powerOfTwo: Project = {
     "EAS build and deployment pipelines",
     "Over-the-air updates",
   ],
+  mainTechStack: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Tamagui",
+  ],
   techStack: [
     "React Native",
     "Expo",

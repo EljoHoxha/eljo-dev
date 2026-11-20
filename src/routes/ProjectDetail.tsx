@@ -3,7 +3,7 @@ import { Link, useParams } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
 import CommandPalette from '../components/CommandPalette';
-import TechTag from '../components/TechTag';
+import ProjectTechStack from '../components/ProjectTechStack';
 import ThemeToggle from '../components/ThemeToggle';
 import { getProjectBySlug } from '../data/projects';
 import type { ProjectImage } from '../types/project';
@@ -138,9 +138,7 @@ export default function ProjectDetail() {
                   </div>
                 )}
               </dl>
-              <div className="mt-8 flex flex-wrap gap-2">
-                {project.techStack.map((technology) => <TechTag className="glow-tag" key={technology} label={technology} />)}
-              </div>
+              <ProjectTechStack className="mt-8" project={project} tagClassName="glow-tag" />
               {(project.liveUrl || project.repositoryUrl) && (
                 <div className="mt-8 flex flex-wrap gap-3">
                   {project.liveUrl && (

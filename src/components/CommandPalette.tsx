@@ -12,7 +12,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import resumePath from '../assets/cv/eljo-hoxha-cv.pdf';
+import resumePath from '../assets/cv/EljoHoxha-CV.pdf';
 
 type CommandAction = {
   title: string;
