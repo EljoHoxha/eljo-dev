@@ -625,6 +625,21 @@ button {
   filter: saturate(1.08);
 }
 
+.project-cover-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(101, 244, 255, 0.16), transparent 60%),
+    radial-gradient(circle at 75% 75%, rgba(255, 107, 203, 0.15), transparent 60%),
+    var(--surface-strong);
+  color: var(--text-primary);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
 .project-card:hover {
   transform: translateY(-6px);
   border-color: rgba(101, 244, 255, 0.4);

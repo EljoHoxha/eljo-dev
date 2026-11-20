@@ -1,4 +1,5 @@
 import type { Project } from "../types/project";
+import { artvue } from "./artvue";
 import { chamberedIn } from "./chamberedIn";
 import { kidspod } from "./kidspod";
 import { enov8 } from "./e-nov8";
@@ -10,6 +11,7 @@ import { pulseAccess } from "./pulseAccess";
 import { wrent } from "./wrent";
 
 export const projects: Project[] = [
+  artvue,
   chamberedIn,
   oneHomeSolution,
   wrent,

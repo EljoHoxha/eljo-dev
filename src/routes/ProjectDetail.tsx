@@ -3,6 +3,7 @@ import { Link, useParams } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import FutureScene from '../components/FutureScene';
 import CommandPalette from '../components/CommandPalette';
+import ProjectCover from '../components/ProjectCover';
 import ProjectTechStack from '../components/ProjectTechStack';
 import ThemeToggle from '../components/ThemeToggle';
 import { getProjectBySlug } from '../data/projects';
@@ -28,6 +29,14 @@ function ProjectImageCarousel({ images, projectName }: { images: ProjectImage[];
 
   const showPrevious = () => setActiveIndex((current) => (current - 1 + images.length) % images.length);
   const showNext = () => setActiveIndex((current) => (current + 1) % images.length);
+
+  if (images.length === 0) {
+    return (
+      <div className="project-carousel">
+        <ProjectCover className="project-cover" projectName={projectName} />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -188,7 +197,7 @@ export default function ProjectDetail() {
           {project.cvBulletPoints && (
             <section className="project-detail-section">
               <p className="section-kicker">Engineering contributions</p>
-              <h2 className="mt-3 max-w-3xl text-3xl font-semibold sm:text-4xl">Production work across the complete mobile product.</h2>
+              <h2 className="mt-3 max-w-3xl text-3xl font-semibold sm:text-4xl">Production work across the complete product.</h2>
               <ol className="contribution-list mt-8">
                 {project.cvBulletPoints.map((bullet, index) => (
                   <li key={bullet}>

@@ -21,6 +21,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import FutureScene from "../components/FutureScene";
 import CommandPalette from "../components/CommandPalette";
+import ProjectCover from "../components/ProjectCover";
 import ProjectGrid from "../components/ProjectGrid";
 import ProjectTechStack from "../components/ProjectTechStack";
 import TechTag from "../components/TechTag";
@@ -374,17 +375,17 @@ function App() {
                   params={{ slug: project.slug }}
                   aria-label={`View ${project.name} project`}
                 >
-                  <img
+                  <ProjectCover
                     className="project-cover"
-                    src={project.images[0].src}
-                    alt={project.images[0].alt}
+                    image={project.images[0]}
+                    projectName={project.name}
                   />
                 </Link>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-xs uppercase tracking-[0.22em] text-cyan-100/70">
                     {project.role}
                   </span>
-                  <span className="text-sm text-white/38">0{index + 1}</span>
+                  <span className="text-sm text-white/38">{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <h3 className="mt-8 text-2xl font-semibold text-white">
                   {project.name}

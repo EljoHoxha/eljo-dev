@@ -8,7 +8,7 @@ I architect and deliver production applications across iOS, Android, and web—t
 
 [Email](mailto:eljohoxha15@gmail.com) · [LinkedIn](https://linkedin.com/in/eljo-hoxha-70915b279) · [Résumé](src/assets/cv/EljoHoxha-CV.pdf)
 
-**5+ years building products · 9 production platforms · iOS + Android + Web**
+**5+ years building products · 10 production platforms · iOS + Android + Web**
 
 </div>
 
@@ -43,6 +43,7 @@ I transformed a monolithic event workflow into a modular, role-aware system cove
 
 | Project | Role | Key contribution | Platforms |
 |---|---|---|---|
+| **ArtVue** | Full-Stack Engineer | Exclusive Collections subscriptions, Stripe Connect payouts, and paid-content access across five codebases | Web, iOS, Android, TV, Roku |
 | **ChamberedIn** | Senior React Native Developer — Events Lead | Sole ownership of the events architecture and complete mobile lifecycle | iOS, Android |
 | **One Home Solution** | React Native / Expo Engineer | Two-application monorepo, shared design system, and coordinated Expo SDK 53 migration | iOS, Android, Web |
 | **Wrent** | React Native / React Frontend Engineer | Two-sided rental marketplace with Stripe Connect, maps, messaging, and administration | iOS, Android, Web |
